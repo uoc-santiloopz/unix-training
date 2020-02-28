@@ -5,7 +5,6 @@
 #include <string.h>
 
 
-// TODO: ask doubt about compile time errors
 int main() {
 	int process, st, pid;
 	char s[80];
