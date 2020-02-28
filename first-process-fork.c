@@ -3,6 +3,7 @@
 # include <string.h>
 
 
+// TODO: ask doubt about compile time errors
 int main() {
 	int process, st, pid;
 	char s[80];
@@ -15,7 +16,7 @@ int main() {
 		exit(1);
 
 	case 0:
-		sprintf(s, "Whaaaa!! You just had a child!!!\n");
+		sprintf(s, "Whaaaa!! You just had me as a child!!!\n");
 		write(1, s, strlen(s));
 		exit(0);
 
