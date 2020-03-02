@@ -16,16 +16,17 @@ int main() {
 	int fd, n;
 	char c;
 
-	if ((fd = open("../data/datafile.dat", O_RDONLY)) < 0) {
+	if ((fd = open("data/datafile.dat", O_RDONLY)) < 0) {
 		error("Opening file");
 		// reads while there is info and writes throught the stdout
-		while ((n=read(fd, &c, 1)) > 0) {
-			write(1, &c, 1);
-			if (n < 0) {
-				// finished reading file
-				error("file finished reading");
-				close (fd);
-			}
+	}
+
+	while ((n=read(fd, &c, 1)) > 0) {
+		write(1, &c, 1);
+		if (n < 0) {
+			// finished reading file
+			error("file finished reading");
+			close (fd);
 		}
 	}
 }
