@@ -28,7 +28,7 @@ int main() {
 			// close stout channel
 			close (1);
 			// assign stdin to a file
-			if (open("output.dat", O_WRONLY | O_CREAT, 0600) < 0) {
+			if (open("out/output.dat", O_WRONLY | O_CREAT, 0600) < 0) {
 				error("Error opening file");
 			}
 			// now we are ready to output in the file
