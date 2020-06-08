@@ -2,6 +2,7 @@
 #include <pthread.h>
 #define NTHREADS 10
 
+
 void *thread_function ();
 pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 int counter = 0;
